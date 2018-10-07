@@ -1,10 +1,10 @@
-module.exports.run = async (client, message, args) => {}
+#⛔punições module.exports.run = async (client, message, args) => {}
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
     let reason = args.slice(1).join(' ');
     let user = args[0];
-    let modlog = client.channels.find('name', 'banimentos');
-    if (!modlog) return message.reply('Eu não consegui desbanir o usuário, pois não tem o chat `banimentos`.')
+    let modlog = client.channels.find('name', '⛔punições ');
+    if (!modlog) return message.reply('Eu não consegui desbanir o usuário, pois não tem o chat `⛔punições `.')
     if (reason.length < 1) return message.reply('Você precisa colocar o motivo para poder desbanir o usuário.');
     if (!user) return message.reply('Você precisa mencionar alguém já banido para desbanir.').catch(console.error);
     message.guild.unban(user);
