@@ -8,6 +8,9 @@ module.exports.run = async (client, message, args) => {
       .setAuthor('SAY', "https://discordapp.com/assets/37721a3154785c9557e97172b60c6ce7.svg")
       .setFooter(`Por: ${message.author.username}`, message.author.avatarURL)
       .setDescription("" + args.join(" "));
+      message.channel.send("SAY").then(a=>a.delete(1));
+      message.channel.send({embed})
+      message.delete().catch();
       message.channel.send(sayMessage);
       
 
