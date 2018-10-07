@@ -43,7 +43,7 @@ module.exports.run = async(client, message, args) =>{
 },
           {
             name: ":chocolate_bar: Nossos Minigames:",
-            value: ":wink: Atualmente "
+            value: ":wink: Atualmente Factions "
           },
           {
             name: ":wave: IP:",
