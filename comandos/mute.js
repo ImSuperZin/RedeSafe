@@ -5,9 +5,9 @@ module.exports.run = async (client, message, args) => {
     exports.run = (client, message, args) => {
         let reason = args.slice(1).join(' ');
         let user = message.mentions.users.first();
-        let modlog = client.channels.find('name', 'puniçoes');
+        let modlog = client.channels.find('name', '⛔punições ');
         let muteRole = client.guilds.get(message.guild.id).roles.find('name', 'Silenciado');
-        if (!modlog) return message.reply('eu não achei o canal de texto `#puniçoes`, crie para eu poder mutar alguém.').catch(console.error);
+        if (!modlog) return message.reply('eu não achei o canal de texto `#⛔punições `, crie para eu poder mutar alguém.').catch(console.error);
         if (!muteRole) return message.reply('eu não achei o cargo `Silenciado`, crie para eu poder mutar alguém.').catch(console.error);
         if (reason.length < 1) return message.reply('você precisa de um motivo para poder mutar alguém.').catch(console.error);
         if (message.mentions.users.size < 1) return message.reply('mencione um membro desejado para mutar.').catch(console.error);
