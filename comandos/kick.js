@@ -1,7 +1,7 @@
 module.exports.run = async(client, message, args) =>{
   message.delete();  
-  if(!message.member.roles.some(r=>["Staff"].includes(r.name)) )
-      return message.reply("Você precisa do cargo `Staff` para poder kickar alguém.");
+  if(!message.member.roles.some(r=>["🌐┇ Staffers"].includes(r.name)) )
+      return message.reply("Você precisa do cargo `🌐┇ Staffers` para poder kickar alguém.");
     
     // Let's first check if we have a member and if we can kick them!
     // message.mentions.members is a collection of people that have been mentioned, as GuildMembers.
