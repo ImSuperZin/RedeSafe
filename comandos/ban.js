@@ -1,7 +1,7 @@
 module.exports.run = async(client, message, args) =>{
   message.delete(); 
-  if(!message.member.roles.some(r=>["Staff"].includes(r.name)) )
-      return message.reply("Você precisa do cargo `Staff` para poder banir alguém.");
+  if(!message.member.roles.some(r=>["🌐┇ Staffers"].includes(r.name)) )
+      return message.reply("Você precisa do cargo `🌐┇ Staffers` para poder banir alguém.");
     
     let member = message.mentions.members.first();
     if(!member)
