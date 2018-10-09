@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
       if(!message.member.hasPermission("ADMINISTRATOR")) return;
       const embed = new Discord.RichEmbed()
       .setColor('RANDOM')
-      .setAuthor('SAY', "https://discordapp.com/assets/37721a3154785c9557e97172b60c6ce7.svg")
+      .setAuthor('SAY', "https://cdn.discordapp.com/emojis/458021977957859329.png?v=1")
       .setFooter(`Por: ${message.author.username}`, message.author.avatarURL)
       .setDescription("" + args.join(" "));
       message.channel.send("SAY").then(a=>a.delete(1));
